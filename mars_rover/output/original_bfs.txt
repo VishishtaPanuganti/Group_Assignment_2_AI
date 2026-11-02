@@ -1,0 +1,33 @@
+; Domain  : ../pddl/Domain.pddl
+; Problem : ../pddl/Problem.pddl
+; Search  : Breadth-First Search (optimal)
+; Grounded: 56 facts, 156 operators
+ 1: (move curiosity base sitea)
+ 2: (move curiosity sitea sitec)
+ 3: (move curiosity sitec sitee)
+ 4: (pick-drill curiosity drill1 sitee)
+ 5: (move curiosity sitee sitef)
+ 6: (collect-hard curiosity rock5 sitef bay1 drill1)
+ 7: (move curiosity sitef sitee)
+ 8: (move curiosity sitee sitec)
+ 9: (collect-hard curiosity rock3 sitec bay2 drill1)
+10: (move curiosity sitec sitea)
+11: (move curiosity sitea base)
+12: (deposit curiosity rock3 base bay2)
+13: (move curiosity base sitea)
+14: (collect-soft curiosity rock1 sitea bay2)
+15: (move curiosity sitea base)
+16: (deposit curiosity rock1 base bay2)
+17: (deposit curiosity rock5 base bay1)
+18: (move curiosity base siteb)
+19: (move curiosity siteb sited)
+20: (collect-soft curiosity rock4 sited bay1)
+21: (move curiosity sited siteb)
+22: (collect-soft curiosity rock2 siteb bay2)
+23: (move curiosity siteb base)
+24: (deposit curiosity rock2 base bay2)
+25: (deposit curiosity rock4 base bay1)
+; Plan length: 25 actions (unit cost)
+; States expanded : 332520
+; States generated: 337037
+; Planning time  : 7.8628 s

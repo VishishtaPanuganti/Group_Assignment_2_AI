@@ -1,0 +1,270 @@
+VALIDATION of ../output/extended_gbfs.txt on ../pddl/Problem_extended.pddl
+============================================================
+Initial dynamic state:
+  (bay-empty bay1), (bay-empty bay2), (drill-at drill1 sitee), (rock-at rock1 sitea), (rock-at rock2 siteb), (rock-at rock3 sitec), (rock-at rock4 sited), (rock-at rock5 sitef), (rock-at rock6 sitee), (rock-at rock7 sitef), (rover-at curiosity base)
+
+Step 1: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 2: (collect-soft curiosity rock1 sitea bay1)
+  preconditions OK (5 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'empty', 'bay1': 'rock1'}
+
+Step 3: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock1'}
+
+Step 4: (deposit curiosity rock1 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 5: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 6: (move curiosity sitea sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 7: (move curiosity sitec sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 8: (pick-drill curiosity drill1 sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 9: (move curiosity sitee sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 10: (collect-hard curiosity rock3 sitec bay1 drill1)
+  preconditions OK (6 checked)
+  rover-at: ['sitec'] | bays: {'bay2': 'empty', 'bay1': 'rock3'}
+
+Step 11: (move curiosity sitec sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'empty', 'bay1': 'rock3'}
+
+Step 12: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock3'}
+
+Step 13: (deposit curiosity rock3 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 14: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 15: (move curiosity sitea sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 16: (move curiosity sitec sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 17: (collect-soft curiosity rock6 sitee bay1)
+  preconditions OK (5 checked)
+  rover-at: ['sitee'] | bays: {'bay2': 'empty', 'bay1': 'rock6'}
+
+Step 18: (move curiosity sitee sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay2': 'empty', 'bay1': 'rock6'}
+
+Step 19: (move curiosity sitec sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'empty', 'bay1': 'rock6'}
+
+Step 20: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock6'}
+
+Step 21: (deposit curiosity rock6 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 22: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 23: (move curiosity sitea sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 24: (move curiosity sitec sited)
+  preconditions OK (2 checked)
+  rover-at: ['sited'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 25: (collect-soft curiosity rock4 sited bay1)
+  preconditions OK (5 checked)
+  rover-at: ['sited'] | bays: {'bay2': 'empty', 'bay1': 'rock4'}
+
+Step 26: (move curiosity sited sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay2': 'empty', 'bay1': 'rock4'}
+
+Step 27: (move curiosity sitee sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay2': 'empty', 'bay1': 'rock4'}
+
+Step 28: (move curiosity sitec sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'empty', 'bay1': 'rock4'}
+
+Step 29: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock4'}
+
+Step 30: (deposit curiosity rock4 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 31: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 32: (move curiosity sitea sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 33: (move curiosity sitec sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 34: (move curiosity sitee sitef)
+  preconditions OK (2 checked)
+  rover-at: ['sitef'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 35: (collect-hard curiosity rock5 sitef bay1 drill1)
+  preconditions OK (6 checked)
+  rover-at: ['sitef'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 36: (move curiosity sitef sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 37: (move curiosity sitee sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 38: (move curiosity sitec sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 39: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 40: (deposit curiosity rock5 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 41: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 42: (move curiosity sitea sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 43: (move curiosity sitec sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 44: (move curiosity sitee sitef)
+  preconditions OK (2 checked)
+  rover-at: ['sitef'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 45: (collect-hard curiosity rock7 sitef bay1 drill1)
+  preconditions OK (6 checked)
+  rover-at: ['sitef'] | bays: {'bay2': 'empty', 'bay1': 'rock7'}
+
+Step 46: (move curiosity sitef sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay2': 'empty', 'bay1': 'rock7'}
+
+Step 47: (move curiosity sitee sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay2': 'empty', 'bay1': 'rock7'}
+
+Step 48: (move curiosity sitec sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'empty', 'bay1': 'rock7'}
+
+Step 49: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock7'}
+
+Step 50: (deposit curiosity rock7 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 51: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 52: (move curiosity sitea sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 53: (move curiosity sitec sited)
+  preconditions OK (2 checked)
+  rover-at: ['sited'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 54: (move curiosity sited siteb)
+  preconditions OK (2 checked)
+  rover-at: ['siteb'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 55: (collect-soft curiosity rock2 siteb bay1)
+  preconditions OK (5 checked)
+  rover-at: ['siteb'] | bays: {'bay2': 'empty', 'bay1': 'rock2'}
+
+Step 56: (move curiosity siteb sited)
+  preconditions OK (2 checked)
+  rover-at: ['sited'] | bays: {'bay2': 'empty', 'bay1': 'rock2'}
+
+Step 57: (move curiosity sited sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay2': 'empty', 'bay1': 'rock2'}
+
+Step 58: (move curiosity sitee sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay2': 'empty', 'bay1': 'rock2'}
+
+Step 59: (move curiosity sitec sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'empty', 'bay1': 'rock2'}
+
+Step 60: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock2'}
+
+Step 61: (deposit curiosity rock2 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+============================================================
+FINAL STATE (dynamic facts):
+  (bay-empty bay1), (bay-empty bay2), (has-drill curiosity drill1), (rock-at rock1 base), (rock-at rock2 base), (rock-at rock3 base), (rock-at rock4 base), (rock-at rock5 base), (rock-at rock6 base), (rock-at rock7 base), (rover-at curiosity base)
+
+  goal (rock-at rock1 base)         SATISFIED
+  goal (rock-at rock2 base)         SATISFIED
+  goal (rock-at rock3 base)         SATISFIED
+  goal (rock-at rock4 base)         SATISFIED
+  goal (rock-at rock5 base)         SATISFIED
+  goal (rock-at rock6 base)         SATISFIED
+  goal (rock-at rock7 base)         SATISFIED
+  goal (bay-empty bay1)             SATISFIED
+  goal (bay-empty bay2)             SATISFIED
+  goal (rover-at curiosity base)    SATISFIED
+
+All 7 rocks at base : True
+Both bays empty      : True
+Rover at base        : True
+Drill carried        : True
+
+PLAN VALID: True  (length 61)

@@ -1,0 +1,124 @@
+VALIDATION of ../output/original_bfs.txt on ../pddl/Problem.pddl
+============================================================
+Initial dynamic state:
+  (bay-empty bay1), (bay-empty bay2), (drill-at drill1 sitee), (rock-at rock1 sitea), (rock-at rock2 siteb), (rock-at rock3 sitec), (rock-at rock4 sited), (rock-at rock5 sitef), (rover-at curiosity base)
+
+Step 1: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 2: (move curiosity sitea sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 3: (move curiosity sitec sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 4: (pick-drill curiosity drill1 sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 5: (move curiosity sitee sitef)
+  preconditions OK (2 checked)
+  rover-at: ['sitef'] | bays: {'bay1': 'empty', 'bay2': 'empty'}
+
+Step 6: (collect-hard curiosity rock5 sitef bay1 drill1)
+  preconditions OK (6 checked)
+  rover-at: ['sitef'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 7: (move curiosity sitef sitee)
+  preconditions OK (2 checked)
+  rover-at: ['sitee'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 8: (move curiosity sitee sitec)
+  preconditions OK (2 checked)
+  rover-at: ['sitec'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 9: (collect-hard curiosity rock3 sitec bay2 drill1)
+  preconditions OK (6 checked)
+  rover-at: ['sitec'] | bays: {'bay1': 'rock5', 'bay2': 'rock3'}
+
+Step 10: (move curiosity sitec sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay1': 'rock5', 'bay2': 'rock3'}
+
+Step 11: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay1': 'rock5', 'bay2': 'rock3'}
+
+Step 12: (deposit curiosity rock3 base bay2)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 13: (move curiosity base sitea)
+  preconditions OK (2 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 14: (collect-soft curiosity rock1 sitea bay2)
+  preconditions OK (5 checked)
+  rover-at: ['sitea'] | bays: {'bay2': 'rock1', 'bay1': 'rock5'}
+
+Step 15: (move curiosity sitea base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'rock1', 'bay1': 'rock5'}
+
+Step 16: (deposit curiosity rock1 base bay2)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock5'}
+
+Step 17: (deposit curiosity rock5 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'empty'}
+
+Step 18: (move curiosity base siteb)
+  preconditions OK (2 checked)
+  rover-at: ['siteb'] | bays: {'bay2': 'empty', 'bay1': 'empty'}
+
+Step 19: (move curiosity siteb sited)
+  preconditions OK (2 checked)
+  rover-at: ['sited'] | bays: {'bay2': 'empty', 'bay1': 'empty'}
+
+Step 20: (collect-soft curiosity rock4 sited bay1)
+  preconditions OK (5 checked)
+  rover-at: ['sited'] | bays: {'bay2': 'empty', 'bay1': 'rock4'}
+
+Step 21: (move curiosity sited siteb)
+  preconditions OK (2 checked)
+  rover-at: ['siteb'] | bays: {'bay2': 'empty', 'bay1': 'rock4'}
+
+Step 22: (collect-soft curiosity rock2 siteb bay2)
+  preconditions OK (5 checked)
+  rover-at: ['siteb'] | bays: {'bay2': 'rock2', 'bay1': 'rock4'}
+
+Step 23: (move curiosity siteb base)
+  preconditions OK (2 checked)
+  rover-at: ['base'] | bays: {'bay2': 'rock2', 'bay1': 'rock4'}
+
+Step 24: (deposit curiosity rock2 base bay2)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'rock4'}
+
+Step 25: (deposit curiosity rock4 base bay1)
+  preconditions OK (3 checked)
+  rover-at: ['base'] | bays: {'bay2': 'empty', 'bay1': 'empty'}
+
+============================================================
+FINAL STATE (dynamic facts):
+  (bay-empty bay1), (bay-empty bay2), (has-drill curiosity drill1), (rock-at rock1 base), (rock-at rock2 base), (rock-at rock3 base), (rock-at rock4 base), (rock-at rock5 base), (rover-at curiosity base)
+
+  goal (rock-at rock1 base)         SATISFIED
+  goal (rock-at rock2 base)         SATISFIED
+  goal (rock-at rock3 base)         SATISFIED
+  goal (rock-at rock4 base)         SATISFIED
+  goal (rock-at rock5 base)         SATISFIED
+  goal (bay-empty bay1)             SATISFIED
+  goal (bay-empty bay2)             SATISFIED
+  goal (rover-at curiosity base)    SATISFIED
+
+All 5 rocks at base : True
+Both bays empty      : True
+Rover at base        : True
+Drill carried        : True
+
+PLAN VALID: True  (length 25)
